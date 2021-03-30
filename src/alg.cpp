@@ -39,8 +39,9 @@ int countPairs3(int *arr, int len, int value) {
   for (int i = len - 1; i > -1; --i) {
     if (arr[i] > value)
       right -= 1;
-    else
+    else {
       break;
+    }
   }
   int l = 0, r = right;
   for (int i = 0; i < right + 1; ++i) {
