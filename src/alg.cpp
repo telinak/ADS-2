@@ -49,8 +49,9 @@ int countPairs3(int *arr, int len, int value) {
       if (arr[m] < (value - arr[i]))
         l = m + 1;
       else {
-        if (arr[m] > (value - arr[i]))
+        if (arr[m] > (value - arr[i])) {
           r = m - 1;
+        }
       } else {
         k = k + 1;
       }
