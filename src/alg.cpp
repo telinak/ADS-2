@@ -10,7 +10,7 @@ int countPairs1(int *arr, int len, int value) {
   return k;
 }
 int countPairs2(int *arr, int len, int value) {
-  int k = 0;
+  int right = len - 1, k = 0;
   while (arr[right] > value) do {
     right -= 1;
   }
