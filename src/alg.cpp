@@ -29,7 +29,7 @@ int countPairs2(int *arr, int len, int value) {
   return k;
 }
 int countPairs3(int *arr, int len, int value) {
-  int left = 0, right = size - 1, middle, k = 0;
+  int left = 0, right = len - 1, middle, k = 0;
   for (int i = 0; i < len; ++i) {
     while (left <= right) {
     middle = (left + right) / 2;
