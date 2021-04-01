@@ -42,7 +42,7 @@ int countPairs3(int *arr, int len, int value) {
   }
   for (int i = middle; arr[i] == value; ++i) {
         k = k + 1;
-        if (i == size - 1)
+        if (i == len - 1)
           break;
       }
       for (int j = middle - 1; arr[j] == value; --j) {
