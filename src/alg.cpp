@@ -41,7 +41,7 @@ int countPairs3(int *arr, int len, int value) {
         if (arr[middle] == value2) {
           while ((arr[middle-1] == value2)
                  && (middle > i+1)) --middle;
-          while (arr[middle] == value2) ++middle, ++n;
+          while (arr[middle] == value2) ++middle, ++j;
           break;
         } else if (arr[middle] > value2) {
           right = middle;
