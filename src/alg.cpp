@@ -10,18 +10,14 @@ int countPairs1(int *arr, int len, int value) {
   return k;
 }
 int countPairs2(int *arr, int len, int value) {
-  int right = len - 1, k = 0;
-  while (arr[right] > value) {
-    --right;
-  }
-  for (int left = 0; left < right; ++left) {
-    if (arr[left] + arr[right] == value)
-      k = k + 1;
-    if (arr[left] == arr[left + 1])
-      right += 1;
-    if (arr[right] == arr[right + 1])
-      left += 1;
-    right -= 1;
+  int k = 0;
+  for (int right = len - 1; i > 0; --i) {
+    if (arr[right] <= value) {
+      for (int j = 0; j < right; ++j) {
+        if ((arr[right] + arr[j]) == value)
+          ++k;
+      }
+    }
   }
   return k;
 }
